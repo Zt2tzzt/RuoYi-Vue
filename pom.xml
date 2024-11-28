@@ -35,6 +35,8 @@
         <logback.version>1.2.13</logback.version>
         <spring-security.version>5.7.12</spring-security.version>
         <spring-framework.version>5.3.39</spring-framework.version>
+        <!-- sky -->
+        <sky.version>1.0-SNAPSHOT</sky.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -218,6 +220,12 @@
                 <version>${ruoyi.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.ruoyi</groupId>
+                <artifactId>sky-merchant</artifactId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -228,6 +236,7 @@
         <module>ruoyi-quartz</module>
         <module>ruoyi-generator</module>
         <module>ruoyi-common</module>
+        <module>sky-merchant</module>
     </modules>
     <packaging>pom</packaging>
 
