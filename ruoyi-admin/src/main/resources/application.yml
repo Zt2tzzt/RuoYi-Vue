@@ -68,11 +68,11 @@ spring:
   # redis 配置
   redis:
     # 地址
-    host: localhost
+    host: ${spring.redis.host}
     # 端口，默认为6379
-    port: 6379
+    port: ${spring.redis.port}
     # 数据库索引
-    database: 0
+    database: ${spring.redis.database}
     # 密码
     password: ${spring.redis.password}
     # 连接超时时间
